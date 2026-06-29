@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+/* ============================================================
+   CLEAN CORE JANITORIAL — "SPOTLESS"
+   Bright, airy, trustworthy B2B. A predominantly white and
+   soft-teal canvas with navy type and dark anchor sections.
+   Teal is the confident accent; navy carries authority. Real
+   jobsite photography runs in full-bleed bands under a navy
+   wash. Soft radii and gentle lift echo the logo's circles.
+   Headings: Plus Jakarta Sans. Body: Inter. Restrained motion.
+   ============================================================ */
+
+@theme {
+  /* ---- light grounds ---- */
+  --color-white: #ffffff;
+  --color-surface: #f4fafb;
+  --color-surface-2: #e8f4f6;
+  --color-surface-3: #d9ebef;
+
+  /* ---- navy (brand dark) ladder ---- */
+  --color-navy: #003040;
+  --color-navy-800: #07394a;
+  --color-navy-700: #0f4757;
+  --color-navy-600: #1a5566;
+
+  /* ---- ink for light surfaces ---- */
+  --color-ink: #0e2730;
+  --color-ink-2: #2c4750;
+  --color-muted: #5e7a82;
+  --color-faint: #93a9af;
+
+  /* ---- the brand accent: teal ---- */
+  --color-teal: #2f9fb2;          /* primary accent */
+  --color-teal-bright: #40b0c0;   /* brand bubble teal */
+  --color-teal-deep: #15808f;     /* buttons / strong contrast */
+  --color-teal-light: #88d0e0;    /* soft highlights */
+  --color-teal-tint: #e3f5f8;     /* very light fills */
+  --color-teal-ink: #0c5560;      /* teal text on light */
+
+  /* ---- hairlines ---- */
+  --color-line: #e2ebed;          /* on light */
+  --color-line-2: #d2e0e3;        /* on light, stronger */
+  --color-line-navy: #15485a;     /* on navy */
+
+  /* ---- type ---- */
+  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* ---- soft lift (airy, unlike Armor's flat steel) ---- */
+  --shadow-card: 0 1px 2px rgba(0, 48, 64, 0.04), 0 10px 30px -16px rgba(0, 48, 64, 0.16);
+  --shadow-lift: 0 2px 6px rgba(0, 48, 64, 0.07), 0 22px 50px -20px rgba(0, 48, 64, 0.24);
+
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  --background: var(--color-white);
+  --foreground: var(--color-ink);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  background: var(--color-white);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-teal-light);
+  color: var(--color-navy);
+}
+
+/* ============================================================
+   TYPE UTILITIES
+   ============================================================ */
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-teal-deep);
+}
+
+.display-2xl {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.display-xl {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2rem, 4.4vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.022em;
+}
+
+.display-lg {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  line-height: 1.12;
+  letter-spacing: -0.018em;
+}
+
+.display-md {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+}
+
+.lead {
+  font-size: clamp(1.08rem, 1.5vw, 1.3rem);
+  line-height: 1.6;
+}
+
+.body { font-size: 1rem; line-height: 1.7; }
+.small { font-size: 0.875rem; line-height: 1.55; }
+
+/* ============================================================
+   SIGNATURE ELEMENTS
+   ============================================================ */
+
+/* eyebrow ring — a small teal bubble before labels (logo motif) */
+.bubble::before {
+  content: "";
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.6rem;
+  border-radius: 9999px;
+  background: var(--color-teal-bright);
+  box-shadow: 0 0 0 4px var(--color-teal-tint);
+  vertical-align: middle;
+}
+
+/* soft card */
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow-card);
+}
+
+/* check bullet */
+.check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: var(--color-teal-tint);
+  color: var(--color-teal-deep);
+  flex-shrink: 0;
+}
+
+/* reveal — gated on html.js so content is ALWAYS visible without JS */
+html.js .rise { opacity: 0; transform: translateY(16px); }
+html.js .rise.in {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.7s var(--ease-out-soft), transform 0.7s var(--ease-out-soft);
+}
+
+/* growing underline for nav/links */
+.ul-grow {
+  background-image: linear-gradient(var(--color-teal-bright), var(--color-teal-bright));
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.35s var(--ease-out-soft);
+}
+.ul-grow:hover { background-size: 100% 2px; }
+
+.wrap { width: 100%; max-width: 74rem; margin-inline: auto; padding-inline: 1.5rem; }
+.wrap-wide { width: 100%; max-width: 84rem; margin-inline: auto; padding-inline: 1.5rem; }
