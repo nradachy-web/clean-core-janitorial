@@ -18,7 +18,7 @@ export function Hero() {
           </h1>
           <p className="lead text-ink-2 mt-6 max-w-xl">
             Dependable commercial janitorial for offices, medical, retail, and industrial spaces
-            across Grand Rapids and West Michigan. Family-owned, bilingual, and fully committed to
+            across Grand Rapids and West Michigan. Locally owned, bilingual, and fully committed to
             your space.
           </p>
 
@@ -46,8 +46,8 @@ export function Hero() {
         <div className="relative">
           <div className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden shadow-[var(--shadow-lift)]">
             <Image
-              src="/photos/hero-scrubber.jpg"
-              alt="Clean Core team cleaning a commercial facility floor"
+              src="/photos/band-wide-2.jpg"
+              alt="A freshly cleaned corporate office maintained by Clean Core Janitorial"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 45vw"

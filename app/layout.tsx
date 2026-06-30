@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Clean Core Janitorial",
   },
   description:
-    "Commercial janitorial and office cleaning across Grand Rapids and West Michigan. Family and Latino-owned, bilingual, trained and insured. 100% satisfaction guarantee. Get a free quote.",
+    "Commercial janitorial and office cleaning across Grand Rapids and West Michigan. Locally and Latino-owned, bilingual, trained and insured. 100% satisfaction guarantee. Get a free quote.",
   keywords: [
     "commercial cleaning Grand Rapids",
     "janitorial services Grand Rapids",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Clean Core Janitorial — Commercial Cleaning in West Michigan",
     description:
-      "Dependable commercial cleaning for offices, medical, retail, and more. Family-owned, bilingual, fully insured.",
+      "Dependable commercial cleaning for offices, medical, retail, and more. Locally owned, bilingual, fully insured.",
     type: "website",
     url: `https://${site.domain}`,
     siteName: site.name,

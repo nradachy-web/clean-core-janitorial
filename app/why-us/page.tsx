@@ -8,7 +8,7 @@ import { capabilities } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Why Clean Core — A Cleaning Crew You Can Keep",
   description:
-    "Family and Latino-owned, bilingual, trained and insured, and backed by a 100% satisfaction guarantee. See how Clean Core Janitorial works, from walkthrough to ongoing quality checks.",
+    "Locally and Latino-owned, bilingual, trained and insured, and backed by a 100% satisfaction guarantee. See how Clean Core Janitorial works, from walkthrough to ongoing quality checks.",
 };
 
 const steps = [
@@ -46,7 +46,7 @@ export default function WhyUsPage() {
             <span className="text-teal-deep">actually keep.</span>
           </>
         }
-        lead="A local, family and Latino-owned cleaning company built on reliability, clear communication, and a standard we stand behind. Here is what working with us looks like."
+        lead="A local, Latino-owned cleaning company built on reliability, clear communication, and a standard we stand behind. Here is what working with us looks like."
       />
 
       <WhyUs />
@@ -119,9 +119,9 @@ export default function WhyUsPage() {
                   />
                 </svg>
               </span>
-              <h3 className="display-lg text-navy">A bilingual, family-owned team</h3>
+              <h3 className="display-lg text-navy">A bilingual, locally owned team</h3>
               <p className="body text-muted mt-4">
-                Clean Core is a local, family and Latino-owned business led by Jovanni. Our bilingual
+                Clean Core is a local, Latino-owned business led by Jovanni. Our bilingual
                 (English and Spanish) crew communicates clearly with your team and ours, so nothing
                 gets lost in translation. When you call, you reach people who take real pride in the
                 work and stand behind it with our 100% satisfaction guarantee.

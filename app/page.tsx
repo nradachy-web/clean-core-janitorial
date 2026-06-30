@@ -1,5 +1,4 @@
 import { Hero } from "@/components/sections/Hero";
-import { ClientStrip } from "@/components/sections/ClientStrip";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { GuaranteeBand } from "@/components/sections/GuaranteeBand";
@@ -13,7 +12,6 @@ export default function Home() {
     <>
       <LocalBusinessSchema />
       <Hero />
-      <ClientStrip />
       <ServicesGrid />
       <WhyUs />
       <GuaranteeBand />

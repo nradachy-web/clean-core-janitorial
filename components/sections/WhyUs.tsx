@@ -9,8 +9,8 @@ export function WhyUs() {
         <Reveal className="relative order-2 lg:order-1">
           <div className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden shadow-[var(--shadow-lift)]">
             <Image
-              src="/photos/night-glass.jpg"
-              alt="Clean Core cleaning glass entry doors after hours"
+              src="/photos/portrait-1.jpg"
+              alt="A clean, organized office workspace maintained by Clean Core"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"

@@ -11,10 +11,10 @@ export function Footer() {
             <Logo variant="light" />
             <p className="body text-white/65 mt-5 max-w-xs">
               Dependable commercial cleaning for offices, medical, retail, and industrial spaces
-              across West Michigan. Family-owned, bilingual, and fully committed to your space.
+              across West Michigan. Locally owned, bilingual, and fully committed to your space.
             </p>
             <div className="flex flex-wrap items-center gap-2 mt-6 text-white/55 small">
-              <span>Family & Latino-owned</span>
+              <span>Locally & Latino-owned</span>
               <span className="text-white/30">•</span>
               <span>Bilingual EN/ES</span>
             </div>
@@ -37,8 +37,9 @@ export function Footer() {
             <h3 className="eyebrow !text-teal-light mb-5">Company</h3>
             <ul className="space-y-3">
               <li><Link href="/why-us" className="small text-white/75 hover:text-white transition-colors">Why Us</Link></li>
-              <li><Link href="/our-work" className="small text-white/75 hover:text-white transition-colors">Our Work</Link></li>
+              <li><Link href="/gallery" className="small text-white/75 hover:text-white transition-colors">Gallery</Link></li>
               <li><Link href="/service-area" className="small text-white/75 hover:text-white transition-colors">Service Area</Link></li>
+              <li><Link href="/careers" className="small text-white/75 hover:text-white transition-colors">Careers</Link></li>
               <li><Link href="/contact" className="small text-white/75 hover:text-white transition-colors">Get a Quote</Link></li>
             </ul>
           </div>
