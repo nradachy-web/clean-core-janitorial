@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
-/** Clean Core Janitorial — static export for GitHub Pages. Preview at the project
- *  path; set basePath to "" + add public/CNAME at cutover to cleancorejanitorial.com. */
-const repoBase = "/clean-core-janitorial";
+/** Clean Core Janitorial — static export for GitHub Pages. Live at the root domain
+ *  cleancorejanitorial.com (public/CNAME set), so basePath is empty. */
+const repoBase = "";
 
 const nextConfig: NextConfig = {
   output: "export",
