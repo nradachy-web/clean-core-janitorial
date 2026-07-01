@@ -63,8 +63,8 @@ export default function CareersPage() {
               >
                 {site.phone}
               </a>
-              <a href={`mailto:${site.email}`} className="small text-teal-deep underline break-all">
-                {site.email}
+              <a href={`mailto:${site.careersEmail}`} className="small text-teal-deep underline break-all">
+                {site.careersEmail}
               </a>
             </div>
           </div>

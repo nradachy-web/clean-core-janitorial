@@ -32,7 +32,8 @@ export function CareersForm() {
     fd.delete("shift_preference");
     fd.append("shift_preference", shifts.join(", ") || "Not specified");
 
-    fd.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "");
+    // careers submissions route to careers@cleancorejanitorial.com via a dedicated key
+    fd.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_CAREERS_KEY ?? "");
     fd.append("subject", "New job application from cleancorejanitorial.com");
     fd.append("from_name", "Clean Core Careers");
 
@@ -145,7 +146,7 @@ export function CareersForm() {
         />
         <p className="small mt-1.5 text-faint">
           Optional. You can also email your resume to{" "}
-          <a href={`mailto:${site.email}`} className="text-teal-deep underline">{site.email}</a>.
+          <a href={`mailto:${site.careersEmail}`} className="text-teal-deep underline">{site.careersEmail}</a>.
         </p>
       </div>
 
@@ -171,7 +172,7 @@ export function CareersForm() {
         <div className="small mt-4 flex items-center gap-2 rounded-xl border border-line-2 bg-surface px-4 py-3 text-muted">
           <span>
             Something went wrong. Please email your resume to{" "}
-            <a href={`mailto:${site.email}`} className="font-semibold text-teal-deep underline">{site.email}</a>.
+            <a href={`mailto:${site.careersEmail}`} className="font-semibold text-teal-deep underline">{site.careersEmail}</a>.
           </span>
         </div>
       ) : (
